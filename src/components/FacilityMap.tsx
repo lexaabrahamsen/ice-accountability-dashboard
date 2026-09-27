@@ -32,7 +32,8 @@ export function FacilityMap() {
                 key={f.id}
                 center={[f.latitude!, f.longitude!]}
                 radius={6}
-                pathOptions={{ className: 'map-marker' }}
+                // A direct prop, not pathOptions: Leaflet only applies className at creation, not via setStyle().
+                className="map-marker"
               >
                 <Popup>
                   <strong>{f.name}</strong>
