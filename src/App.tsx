@@ -1,8 +1,30 @@
+import { Box, Heading, SimpleGrid, Stat, Text } from '@chakra-ui/react';
 import { useMemo } from 'react';
 import { BoycottSection } from './components/BoycottSection';
 import { DeathsSection } from './components/DeathsSection';
 import { FacilityMap } from './components/FacilityMap';
 import { useDeaths, useFacilities } from './hooks/queries';
+
+function StatCard({ label, value, big }: { label: string; value: string | number; big?: boolean }) {
+  return (
+    <Stat.Root
+      gridColumn={big ? { base: '1 / -1', md: 'span 1' } : undefined}
+      bg="bgSubtle"
+      borderWidth="1px"
+      borderColor="border"
+      borderRadius="xl"
+      px={5}
+      py={4}
+    >
+      <Stat.Label color="fgMuted" fontSize="sm">
+        {label}
+      </Stat.Label>
+      <Stat.ValueText color="fg" fontSize={big ? '5xl' : '3xl'} fontWeight="semibold" lineHeight="1.1">
+        {value}
+      </Stat.ValueText>
+    </Stat.Root>
+  );
+}
 
 function Stats() {
   const facilities = useFacilities();
@@ -20,49 +42,46 @@ function Stats() {
   }, [facilities.data]);
 
   return (
-    <dl className="stats">
-      <div className="stat hero">
-        <dt>Deaths in ICE custody since FY2021</dt>
-        <dd>{deaths.data?.length ?? '—'}</dd>
-      </div>
-      <div className="stat">
-        <dt>{latestFy ? `In ${latestFy.fy} so far` : 'This fiscal year'}</dt>
-        <dd>{latestFy?.count ?? '—'}</dd>
-      </div>
-      <div className="stat">
-        <dt>Detention facilities listed</dt>
-        <dd>{facilities.data?.length ?? '—'}</dd>
-      </div>
-      {lastUpdated && <p className="muted small stats-note">Data last refreshed {lastUpdated}</p>}
-    </dl>
+    <SimpleGrid columns={{ base: 2, md: 3 }} gap={3}>
+      <StatCard big label="Deaths in ICE custody since FY2021" value={deaths.data?.length ?? '—'} />
+      <StatCard label={latestFy ? `In ${latestFy.fy} so far` : 'This fiscal year'} value={latestFy?.count ?? '—'} />
+      <StatCard label="Detention facilities listed" value={facilities.data?.length ?? '—'} />
+      {lastUpdated && (
+        <Text gridColumn="1 / -1" color="fgMuted" fontSize="sm" m={0}>
+          Data last refreshed {lastUpdated}
+        </Text>
+      )}
+    </SimpleGrid>
   );
 }
 
 export function App() {
   return (
     <>
-      <header className="site-header">
+      <Box as="header" borderBottomWidth="1px" borderColor="border" py={{ base: 10, md: 12 }}>
         <div className="wrap">
-          <h1>ICE Accountability Dashboard</h1>
-          <p className="lede">
+          <Heading as="h1" size="4xl" color="fg" mb={3}>
+            ICE Accountability Dashboard
+          </Heading>
+          <Text color="fgMuted" maxW="68ch" m={0}>
             Where ICE detains people, who has died in its custody, and which companies profit from it. Drawn from official
             ICE publications and public boycott campaigns. Refreshed daily.
-          </p>
+          </Text>
         </div>
-      </header>
+      </Box>
       <main className="wrap">
         <Stats />
         <FacilityMap />
         <DeathsSection />
         <BoycottSection />
       </main>
-      <footer className="wrap site-footer muted small">
-        <p>
+      <Box as="footer" borderTopWidth="1px" borderColor="border" py={{ base: 6, md: 8 }}>
+        <Text className="wrap" color="fgMuted" fontSize="sm">
           Sources: <a href="https://www.ice.gov/detention-facilities">ICE detention facilities</a>,{' '}
           <a href="https://www.ice.gov/detain/detainee-death-reporting">ICE detainee death reporting</a>, and the boycott
           campaigns cited in each row. Map data © OpenStreetMap contributors.
-        </p>
-      </footer>
+        </Text>
+      </Box>
     </>
   );
 }

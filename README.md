@@ -38,7 +38,7 @@ ice.gov pages ─┐
 boycott JSON ──┘        ▲ daily GitHub Action
 ```
 
-- **Frontend:** React, TypeScript, Vite, TanStack Query, TanStack Table v9
+- **Frontend:** React, TypeScript, Vite, Chakra UI, TanStack Query, TanStack Table v9
 - **Map:** react-leaflet with OpenStreetMap tiles
 - **Charts:** Recharts
 - **Database:** Supabase (Postgres). Row-level security gives the public anon key read-only access.

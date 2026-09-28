@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "company_name": "Palantir Technologies",
+    "reason": "Holds multi-million-dollar ICE contracts, including case-management systems, that the #NoTechForICE campaign says enable tracking, family separation, and deportations.",
+    "demand": "Drop all contracts with ICE.",
+    "alternatives": null,
+    "source_url": "https://notechforice.com/palantir/"
+  },
+  {
+    "company_name": "Amazon",
+    "reason": "AWS is ICE's primary cloud service provider, described by the #NoTechForICE campaign as \"the invisible backbone behind ICE's immigration crackdown.\"",
+    "demand": "End cloud-services contracts with ICE and CBP.",
+    "alternatives": null,
+    "source_url": "https://notechforice.com/"
+  },
+  {
+    "company_name": "Citizens Bank",
+    "reason": "Finances CoreCivic and The GEO Group, the two largest private ICE detention operators — deepening its relationship with CoreCivic in 2020 and beginning to finance GEO Group in 2024, even as nine other major banks pledged since 2019 to stop lending to private prison companies.",
+    "demand": "Stop financing CoreCivic and The GEO Group.",
+    "alternatives": "Local credit unions, banks that have already stopped lending to CoreCivic and GEO Group, and prisonfreefunds.org for investment alternatives.",
+    "source_url": "https://www.boycottcitizens.org/the-geo-group-corecivic"
+  }
+]

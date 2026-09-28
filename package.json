@@ -12,6 +12,8 @@
     "scrape:dry": "tsx scraper/index.ts --dry-run"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.37.0",
+    "@emotion/react": "^11.14.0",
     "@supabase/supabase-js": "^2.117.2",
     "@tanstack/react-query": "^5.104.0",
     "@tanstack/react-table": "^9.2.4",
