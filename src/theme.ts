@@ -5,9 +5,16 @@ import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
  * which theme the parts of the app (tables, charts, map) that stay outside Chakra.
  * Keep the two in sync when changing the palette.
  */
+const COURIER = `'Courier Prime', 'Courier New', Courier, monospace`;
+
 const config = defineConfig({
   theme: {
     tokens: {
+      fonts: {
+        heading: { value: COURIER },
+        body: { value: COURIER },
+        mono: { value: COURIER },
+      },
       colors: {
         surface: {
           0: { value: '#0a0a13' },
