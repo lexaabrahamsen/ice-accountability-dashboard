@@ -77,8 +77,8 @@ export function App() {
       </main>
       <Box as="footer" borderTopWidth="1px" borderColor="border" py={{ base: 6, md: 8 }}>
         <Text className="wrap" color="fgMuted" fontSize="sm">
-          Sources: <a href="https://www.ice.gov/detention-facilities">ICE detention facilities</a>,{' '}
-          <a href="https://www.ice.gov/detain/detainee-death-reporting">ICE detainee death reporting</a>, and the boycott
+          Sources: <a href="https://www.ice.gov/detention-facilities" target="_blank" rel="noopener noreferrer">ICE detention facilities</a>,{' '}
+          <a href="https://www.ice.gov/detain/detainee-death-reporting" target="_blank" rel="noopener noreferrer">ICE detainee death reporting</a>, and the boycott
           campaigns cited in each row. Map data © OpenStreetMap contributors.
         </Text>
       </Box>

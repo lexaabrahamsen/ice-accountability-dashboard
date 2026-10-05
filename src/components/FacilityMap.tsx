@@ -15,7 +15,7 @@ export function FacilityMap() {
       <h2 id="facilities-title">Detention facilities</h2>
       <p className="lede">
         Facilities listed on ICE's{' '}
-        <a href="https://www.ice.gov/detention-facilities" target="_blank" rel="noreferrer">
+        <a href="https://www.ice.gov/detention-facilities" target="_blank" rel="noopener noreferrer">
           detention facilities
         </a>{' '}
         page. Select a marker for its address and field office.
@@ -24,7 +24,7 @@ export function FacilityMap() {
         <div className="card map-card">
           <MapContainer center={US_CENTER} zoom={4} scrollWheelZoom={false} className="map">
             <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {mapped.map((f) => (
@@ -54,7 +54,7 @@ export function FacilityMap() {
                     </>
                   )}
                   <br />
-                  <a href={f.source_url} target="_blank" rel="noreferrer">
+                  <a href={f.source_url} target="_blank" rel="noopener noreferrer">
                     ICE facility page ↗
                   </a>
                 </Popup>

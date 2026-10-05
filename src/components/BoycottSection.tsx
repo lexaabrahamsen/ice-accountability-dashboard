@@ -17,7 +17,7 @@ const columns = helper.columns([
     enableSorting: false,
     enableGlobalFilter: false,
     cell: (c) => (
-      <a href={c.getValue()} target="_blank" rel="noreferrer">
+      <a href={c.getValue()} target="_blank" rel="noopener noreferrer">
         Campaign<span className="visually-hidden"> for {c.row.original.company_name}</span> ↗
       </a>
     ),

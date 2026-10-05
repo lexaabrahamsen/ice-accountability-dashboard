@@ -22,7 +22,7 @@ const columns = helper.columns([
     enableSorting: false,
     enableGlobalFilter: false,
     cell: (c) => (
-      <a href={c.getValue()} target="_blank" rel="noreferrer">
+      <a href={c.getValue()} target="_blank" rel="noopener noreferrer">
         Report<span className="visually-hidden"> for {c.row.original.name}</span> ↗
       </a>
     ),
@@ -104,7 +104,7 @@ export function DeathsSection() {
       <h2 id="deaths-title">Deaths in ICE custody</h2>
       <p className="lede">
         Every death ICE has reported since FY2021, per its{' '}
-        <a href="https://www.ice.gov/detain/detainee-death-reporting" target="_blank" rel="noreferrer">
+        <a href="https://www.ice.gov/detain/detainee-death-reporting" target="_blank" rel="noopener noreferrer">
           detainee death reporting
         </a>{' '}
         page. Federal fiscal years run October to September.
