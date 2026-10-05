@@ -5,13 +5,14 @@ import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react';
  * which theme the parts of the app (tables, charts, map) that stay outside Chakra.
  * Keep the two in sync when changing the palette.
  */
+const SPACE = `'Space Grotesk', 'Helvetica Neue', Arial, sans-serif`;
 const COURIER = `'Courier Prime', 'Courier New', Courier, monospace`;
 
 const config = defineConfig({
   theme: {
     tokens: {
       fonts: {
-        heading: { value: COURIER },
+        heading: { value: SPACE },
         body: { value: COURIER },
         mono: { value: COURIER },
       },

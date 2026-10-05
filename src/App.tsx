@@ -16,10 +16,10 @@ function StatCard({ label, value, big }: { label: string; value: string | number
       px={5}
       py={4}
     >
-      <Stat.Label color="fgMuted" fontSize="sm">
+      <Stat.Label fontFamily="heading" color="fgMuted" fontSize="sm">
         {label}
       </Stat.Label>
-      <Stat.ValueText color="fg" fontSize={big ? '5xl' : '3xl'} fontWeight="semibold" lineHeight="1.1">
+      <Stat.ValueText fontFamily="body" color="fg" fontSize="5xl" fontWeight="semibold" lineHeight="1.1">
         {value}
       </Stat.ValueText>
     </Stat.Root>
@@ -47,7 +47,7 @@ function Stats() {
       <StatCard label={latestFy ? `In ${latestFy.fy} so far` : 'This fiscal year'} value={latestFy?.count ?? '—'} />
       <StatCard label="Detention facilities listed" value={facilities.data?.length ?? '—'} />
       {lastUpdated && (
-        <Text gridColumn="1 / -1" color="fgMuted" fontSize="sm" m={0}>
+        <Text gridColumn="1 / -1" fontFamily="heading" color="fgMuted" fontSize="sm" m={0}>
           Data last refreshed {lastUpdated}
         </Text>
       )}

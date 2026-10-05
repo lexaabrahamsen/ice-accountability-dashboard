@@ -11,6 +11,7 @@ import {
   type ColumnDef,
   type SortingState,
 } from '@tanstack/react-table';
+import { Search } from 'lucide-react';
 import { useState } from 'react';
 
 export const tableFeatureSet = tableFeatures({
@@ -53,9 +54,10 @@ export function DataTable<T extends object>({ data, columns, searchLabel, initia
     <div className="table-block">
       <label className="search">
         <span className="visually-hidden">{searchLabel}</span>
+        <Search className="search-icon" size={16} aria-hidden="true" />
         <input
           type="search"
-          placeholder={searchLabel}
+          placeholder={`${searchLabel}…`}
           value={globalFilter}
           onChange={(e) => setGlobalFilter(e.target.value)}
         />
