@@ -69,7 +69,7 @@ export function App() {
           </Text>
         </div>
       </Box>
-      <main className="wrap">
+      <main className="wrap" style={{ paddingTop: 32 }}>
         <Stats />
         <FacilityMap />
         <DeathsSection />
