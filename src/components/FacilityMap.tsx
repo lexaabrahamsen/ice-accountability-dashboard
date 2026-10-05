@@ -11,7 +11,7 @@ export function FacilityMap() {
   const mapped = facilities.filter((f) => f.latitude != null && f.longitude != null);
 
   return (
-    <section aria-labelledby="facilities-title">
+    <section id="facilities" aria-labelledby="facilities-title">
       <h2 id="facilities-title">Detention facilities</h2>
       <p className="lede">
         Facilities listed on ICE's{' '}

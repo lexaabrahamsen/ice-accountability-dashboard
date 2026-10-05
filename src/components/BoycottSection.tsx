@@ -30,7 +30,7 @@ export function BoycottSection() {
   const query = useBoycottTargets();
 
   return (
-    <section aria-labelledby="boycott-title">
+    <section id="boycott" aria-labelledby="boycott-title">
       <h2 id="boycott-title">Corporate boycott targets</h2>
       <p className="lede">Companies named by public boycott campaigns over their ICE contracts. Each row links to its campaign source.</p>
       <QueryState query={query}>

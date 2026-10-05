@@ -100,7 +100,7 @@ export function DeathsSection() {
   );
 
   return (
-    <section aria-labelledby="deaths-title">
+    <section id="deaths" aria-labelledby="deaths-title">
       <h2 id="deaths-title">Deaths in ICE custody</h2>
       <p className="lede">
         Every death ICE has reported since FY2021, per its{' '}

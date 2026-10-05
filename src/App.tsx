@@ -55,9 +55,24 @@ function Stats() {
   );
 }
 
+const NAV_LINKS = [
+  { href: '#facilities', label: 'Detention facilities' },
+  { href: '#deaths', label: 'Deaths in ICE custody' },
+  { href: '#boycott', label: 'Corporate boycott targets' },
+];
+
 export function App() {
   return (
     <>
+      <nav className="site-nav" aria-label="Sections">
+        <ul className="wrap">
+          {NAV_LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <Box as="header" borderBottomWidth="1px" borderColor="border" py={{ base: 10, md: 12 }}>
         <div className="wrap">
           <Heading as="h1" size="4xl" color="fg" mb={3}>
