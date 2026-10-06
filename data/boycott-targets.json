@@ -19,5 +19,775 @@
     "demand": "Stop financing CoreCivic and The GEO Group.",
     "alternatives": "Local credit unions, banks that have already stopped lending to CoreCivic and GEO Group, and prisonfreefunds.org for investment alternatives.",
     "source_url": "https://www.boycottcitizens.org/the-geo-group-corecivic"
+  },
+  {
+    "company_name": "Accenture",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Acquisition Logistics LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Acuity Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Adc Ltd. NM",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Aircraft Transport Services, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Alphabet (Google)",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Amentum Services, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Anduril Industries",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "AT&T",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Avelo Airlines",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "B.I. Incorporated",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Babel Street",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Best Western",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Bluehost",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Booz Allen Hamilton",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "CACI",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Capgemini Government Solutions LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "CBS",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Cellebrite",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Charter Communications",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Classic Air Charter Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Clearview AI",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Comcast",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "CoreCivic",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "CSI Aviation",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Dell",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Deloitte",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Dev Technology Group Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Eastern Airlines",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Ecolab",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "FCN, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "FedEx",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Four Points Technology, LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "FuboTV",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "G4S Secure Solutions (USA) Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Gardaworld Federal Services LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "General Dynamics",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "GEO Group",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "GEO Transport, Inc",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Giant Oak",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Global Precision Systems, LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "GlobalX",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "GoFundMe",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Google Ads",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Greyhound",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "HBO Max",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Hilton",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Home 2 Suites",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Home Depot",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Hulu",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "IAero Airways",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "IBM",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Immigration Centers of America",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Incogni",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Inserso Corporation",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Knight Point Systems, LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "KVG LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "L3Harris Technologies",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "LaSalle Corrections",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Leidos",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "LexisNexis Risk Solutions",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "LinkedIn",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Management and Training Corporation",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Marriott Hotels",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "McKinsey and Company",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Meta Platforms",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Microsoft",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Motorola",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "MVM, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Nakamoto Group",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Omni Air International",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Oracle",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Pandora",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Paragon Professional Services LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Paragon Solutions",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Peraton",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Procentrix, LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Raytheon",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Residence Inn",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Ring",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Salesforce",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Savantage Financial Services, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Sinclair Broadcasting Group",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Sonesta Hotel",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Spectrum Security Services, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Spotify",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Starr Wright USA",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Steampunk",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "STG International, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "T-Rex Consulting Corporation",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Talton Communications Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Target",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Thales",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "The Arora Group, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "The KACE Company",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Thermo Fisher Scientific",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Thomson Reuters Special Services",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "TownePlace Suites",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Tribalco LLC",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "TRM Labs, Inc.",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "U-Haul",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "UPS",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Venntel",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Vigilant Solutions",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Wellpath",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "West Publishing Corporation",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Widepoint",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "Wood Spring Suites",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "X (formerly Twitter)",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
+  },
+  {
+    "company_name": "YouTube",
+    "reason": null,
+    "demand": null,
+    "alternatives": null,
+    "source_url": "https://example.com/source-pending"
   }
 ]
