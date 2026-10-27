@@ -22,7 +22,7 @@
   --font-heading: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Explicit opt-out: append data-theme="light" to <html> to use the light palette. */
+/* Light palette, applied by data-theme="light" on <html> (set in index.html, toggled in the nav). */
 :root[data-theme='light'] {
   color-scheme: light;
   --surface-0: #f5f4f1;
@@ -109,6 +109,25 @@ h2 {
   color: var(--text-primary);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+.site-nav-toggle {
+  display: flex;
+  align-items: center;
+}
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: var(--text-secondary);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--text-primary);
 }
 main section {
   scroll-margin-top: 64px;

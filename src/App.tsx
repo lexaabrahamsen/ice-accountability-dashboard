@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { BoycottSection } from './components/BoycottSection';
 import { DeathsSection } from './components/DeathsSection';
 import { FacilityMap } from './components/FacilityMap';
+import { ThemeToggle } from './components/ThemeToggle';
 import { useDeaths, useFacilities } from './hooks/queries';
 
 function StatCard({ label, value, big }: { label: string; value: string | number; big?: boolean }) {
@@ -71,6 +72,9 @@ export function App() {
               <a href={l.href}>{l.label}</a>
             </li>
           ))}
+          <li className="site-nav-toggle">
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
       <Box as="header" borderBottomWidth="1px" borderColor="border" py={{ base: 10, md: 12 }}>
