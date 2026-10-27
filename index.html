@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Public data on ICE detention facilities, deaths in custody, and corporate boycott targets — drawn from official sources." />
     <script>
-      // Set the palette before first paint: saved choice, else the OS preference.
+      // Set the palette before first paint: dark unless the visitor has chosen light.
       (function () {
         var mode;
         try { mode = localStorage.getItem('theme'); } catch (e) {}
-        if (mode !== 'light' && mode !== 'dark') {
-          mode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        }
-        document.documentElement.dataset.theme = mode;
+        document.documentElement.dataset.theme = mode === 'light' ? 'light' : 'dark';
       })();
     </script>
     <title>ICE Accountability Dashboard</title>
