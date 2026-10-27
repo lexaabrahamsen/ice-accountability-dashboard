@@ -13,6 +13,8 @@ function StatCard({ label, value, big }: { label: string; value: string | number
       bg="bgSubtle"
       borderWidth="1px"
       borderColor="border"
+      borderTopWidth="3px"
+      borderTopColor="var(--accent-purple)"
       borderRadius="xl"
       px={5}
       py={4}

@@ -1,22 +1,24 @@
 :root {
   color-scheme: dark;
-  --surface-0: #0a0a13;
-  --surface-1: #14141f;
-  --surface-2: #1b1b29;
-  --border: #262637;
-  --grid: #21212f;
-  --text-primary: #f5f5fa;
-  --text-secondary: #a7a6be;
-  --text-muted: #7d7c97;
-  --link: #a684ff;
-  --accent-purple: #8951ff;
-  --accent-cyan: #21c3fc;
-  --accent-blue: #0e43fb;
-  --series-1: #8951ff;
-  --series-1-hover: #a375ff;
-  --series-2: #21c3fc;
-  --critical: #f87171;
-  --success: #34d399;
+  /* Deep indigo-navy rather than neutral black, so the app reads as its own surface
+     when it sits inside an already-dark page (e.g. a portfolio card). */
+  --surface-0: #0e1022;
+  --surface-1: #171a33;
+  --surface-2: #20244a;
+  --border: #353a66;
+  --grid: #2a2e56;
+  --text-primary: #fafaff;
+  --text-secondary: #c7c6e0;
+  --text-muted: #9d9cbd;
+  --link: #b79bff;
+  --accent-purple: #9a6bff;
+  --accent-cyan: #3fd0ff;
+  --accent-blue: #5b7bff;
+  --series-1: #a07bff;
+  --series-1-hover: #bb9cff;
+  --series-2: #3fd0ff;
+  --critical: #ff8a8a;
+  --success: #4de0ae;
   --radius: 12px;
   --font: 'Courier Prime', 'Courier New', Courier, monospace;
   --font-heading: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
@@ -327,4 +329,33 @@ td {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* Dark-mode polish */
+:root:not([data-theme='light']) header {
+  background: radial-gradient(ellipse 60% 120% at 15% 0%, rgba(154, 107, 255, 0.18), transparent 70%);
+}
+/* Invert the bright OSM tiles to a dark basemap; markers sit in a separate pane, so they keep their colour. */
+:root:not([data-theme='light']) .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.7);
+}
+:root:not([data-theme='light']) .leaflet-container {
+  background: var(--surface-1);
+}
+:root:not([data-theme='light']) .leaflet-popup-content-wrapper,
+:root:not([data-theme='light']) .leaflet-popup-tip {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+:root:not([data-theme='light']) .leaflet-container a.leaflet-popup-close-button {
+  color: var(--text-secondary);
+}
+:root:not([data-theme='light']) .leaflet-bar a {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+:root:not([data-theme='light']) .leaflet-control-attribution {
+  background: rgba(14, 16, 34, 0.8);
+  color: var(--text-secondary);
 }
