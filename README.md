@@ -79,7 +79,7 @@ Add two repository secrets under **Settings → Secrets and variables → Action
 npm run dev
 ```
 
-To deploy on **Vercel**, import the repo (it detects Vite automatically) and set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in the project's environment variables.
+The live site is on **Netlify**: https://ice-accountability-dashboard.netlify.app. To deploy your own copy, import the repo in Netlify with build command `npm run build` and publish directory `dist`, and set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in the site's environment variables. Netlify redeploys on every push to `main`.
 
 ## Adding boycott targets
 

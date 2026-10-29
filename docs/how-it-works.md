@@ -1,8 +1,8 @@
 ---
 title: ICE Accountability Dashboard — How it works
-tags: [project, supabase, vercel, github-actions, react]
+tags: [project, supabase, netlify, github-actions, react]
 created: 2026-09-27
-live: https://ice-accountability-dashboard.vercel.app
+live: https://ice-accountability-dashboard.netlify.app
 repo: https://github.com/lexaabrahamsen/ice-accountability-dashboard
 ---
 
@@ -13,7 +13,7 @@ repo: https://github.com/lexaabrahamsen/ice-accountability-dashboard
 > **Three services, one job each:**
 > - **GitHub** stores the code and runs the scraper every morning.
 > - **Supabase** is the database.
-> - **Vercel** hosts the public website.
+> - **Netlify** hosts the public website.
 
 ## Architecture diagram
 
@@ -39,8 +39,8 @@ flowchart LR
         T3[("boycott_targets")]
     end
 
-    subgraph VC["Vercel"]
-        SITE["React website<br/>ice-accountability-dashboard.vercel.app"]
+    subgraph VC["Netlify"]
+        SITE["React website<br/>ice-accountability-dashboard.netlify.app"]
     end
 
     USER(["Visitor's browser"])
@@ -81,7 +81,7 @@ flowchart LR
 | Database | Supabase (Postgres) | Free tier, instant REST API |
 | Scraper | Node + Cheerio | Parses ice.gov HTML |
 | Scheduler | GitHub Actions (cron) | Free, logs = change history |
-| Hosting | Vercel | Auto-deploys from GitHub |
+| Hosting | Netlify | Auto-deploys from GitHub |
 
 ## Repo layout
 
@@ -94,7 +94,7 @@ ice-accountability-dashboard/
 │   ├── boycott.ts            # loads data/boycott-targets.json
 │   ├── geocode.ts            # OpenStreetMap Nominatim
 │   └── db.ts                 # Supabase upsert helper
-├── src/                      # the website (Vercel)
+├── src/                      # the website (Netlify)
 │   ├── App.tsx               # layout + headline stats
 │   ├── components/           # FacilityMap, DeathsSection, BoycottSection, DataTable
 │   ├── hooks/queries.ts      # TanStack Query → Supabase
@@ -127,7 +127,7 @@ ice-accountability-dashboard/
 > [!warning] Two keys, two very different jobs
 > | Key | Starts with | Can do | Lives in |
 > | --- | --- | --- | --- |
-> | Publishable | `sb_publishable_` | read only (RLS) | Vercel — safe to be public |
+> | Publishable | `sb_publishable_` | read only (RLS) | Netlify — safe to be public |
 > | Secret | `sb_secret_` | everything, bypasses RLS | GitHub secrets **only** — never commit or share |
 
 ### 3. GitHub — code + automation
@@ -142,14 +142,17 @@ Two workflows:
 - **Refresh data** (`refresh-data.yml`) — daily cron + manual button. Runs the scraper.
 - **CI** (`ci.yml`) — on every push. Checks the code typechecks and builds.
 
-### 4. Vercel — the website
-- [x] **Add New → Project →** imported `ice-accountability-dashboard` (gave the Vercel GitHub app access to the private repo)
-- [x] Preset: **Vite** (auto-detected), root `./`
+### 4. Netlify — the website
+- [x] **Add new project → Import an existing project →** picked `ice-accountability-dashboard` from GitHub
+- [x] Build settings: branch `main`, build command `npm run build`, publish directory `dist` (Node version comes from `.nvmrc`)
 - [x] Environment variables:
   - `VITE_SUPABASE_URL`
   - `VITE_SUPABASE_ANON_KEY` (the **publishable** key)
-- [x] **Deploy** → https://ice-accountability-dashboard.vercel.app
+- [x] **Deploy** → https://ice-accountability-dashboard.netlify.app
 - [x] Fixed a production-only bug where map markers lost their styling (`className` must be a direct prop on react-leaflet's `CircleMarker`, not inside `pathOptions`)
+
+> [!note] Moved from Vercel
+> The site was first deployed on Vercel. It now lives on Netlify, alongside the other portfolio demos; the Vercel project can be deleted.
 
 > [!tip] `VITE_` prefix
 > Vite only exposes environment variables that start with `VITE_` to the browser. That's also why the secret key must **never** get a `VITE_` name.
@@ -162,7 +165,7 @@ Two workflows:
 | --- | --- | --- |
 | Database refresh | Daily, 09:17 UTC | GitHub Actions cron |
 | Website shows new data | Next page load | Browser queries Supabase directly |
-| Website code redeploy | Every `git push` to `main` | Vercel ↔ GitHub integration |
+| Website code redeploy | Every `git push` to `main` | Netlify ↔ GitHub integration |
 | Build check | Every push | GitHub Actions CI |
 
 Where to check a refresh happened:
@@ -182,7 +185,7 @@ Where to check a refresh happened:
 - **Preview locally:** `npm run dev` (needs `.env.local`) → http://localhost:5173
 - **Test the parsers without touching the DB:** `npm run scrape:dry`
 - **Add a boycott target:** edit `data/boycott-targets.json` (`company_name` + `source_url` required), push, then run the workflow
-- **Ship a code change:** `git push` → Vercel redeploys in ~1 min
+- **Ship a code change:** `git push` → Netlify redeploys in ~1 min
 - **Make the repo public:** `gh repo edit --visibility public --accept-visibility-change-consequences`
 
 ## Scope (firm)
